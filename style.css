@@ -1,0 +1,84 @@
+body{
+    background-color:#ff9b00;
+}
+.contain{
+    min-height:100vh;
+    
+}
+.main{
+    padding-left:20px;
+}
+.main h3{
+   
+    letter-spacing:0.2em;
+    color:white;
+    font-family: 'Anton', sans-serif;
+}
+.main h3~.title{
+ letter-spacing:0.1em;
+  font-size:20px;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  padding-top:0;
+  margin-top:0;
+}
+.card{
+    display:none;
+    color:#312d2d;
+}
+.card .card-title{
+    font-size:25px;
+    font-weight:bold;
+    font-family:'Roboto';
+}
+.card section{
+    font-size:20px;
+}
+
+.courses{
+    margin-top:20px;
+    font-family: 'Lato', sans-serif;
+}
+.courses li{
+font-size:18px;
+}
+.contact{
+    margin-top:40px;
+    list-style:none;
+}
+.cards{
+    background-color:white;
+}
+
+#map {
+    height:300px;
+    width:100%;
+}
+.section {
+    padding:20px;
+}
+.section h5{
+    font-family:'Lato';
+}
+.section p{
+    font-size:16px;
+    color:#272626;
+    font-family:'Helvetica';
+}
+footer{
+    min-width:100px;
+    padding-bottom:20px;
+    box-sizing:border-box;
+    background-color: #ff5a00;
+}
+a:hover{
+    background-color: #dddddd;
+}
+@media (max-width:768px){
+    #tablet{
+        background-color:#ff9b00;
+    padding-top:5px;    };
+    body{
+        font-size:25px;
+    }
+}
