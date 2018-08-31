@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,68 +12,68 @@
     <title>ETC -Home</title>
 </head>
 <body>
- <div class="contain">
-    <div class="row">
-        <div class="col s12 l4  aside">
-            <div class="main white-text">
+<div class="wrap">
+ <div class="row">
+   <div class="col s12 m4 l4">
+        <div class="main white-text">
                 <img src="" alt="" class="responsive-img">
                 <h3>ETC</h3>
                 <span class="title">Engineering Tuition Center<br>
                 <i class="material-icons">phone_android&nbsp;</i>086462748</span>
-            </div>
-            <!--Java script-->
-            <ul class="contact collection">
-              <li class="collection-item"><a href="#tablet"><i class="material-icons">class</i> <span>Courses</span><i class="material-icons right">chevron_right</i></a></li>
-              <li class="collection-item"><a href="#ma"><i class="material-icons">location_on</i> <span>Location</span><i class="material-icons right">chevron_right</i></a></li>
-              <li class="collection-item"><a href="#addr"><i class="material-icons">contacts</i> <span>Contact</span><i class="material-icons right">chevron_right</i></a></li>
-            </ul>
-            <!--contact no js-->
-            <div class="section white">
-                <h5 class="black-text">Contact</h5>
-                <div class="divider"></div>
-                <p>Near Kallada Regency</p>
-                <p>Irinjalakuda P.O</p>
-                <p>Thrissur</p>
-            </div>
         </div>
-        <div class="col s12 l8 cards" id="tablet">
-            <div class="card courses"   id="cor">
-                <div class="card-content">
-                    <span class="card-title">Courses Offered<i class="material-icons right close">close</i></span>
-                    <ul class="collection">
-                        <li class="collection-item">Engineering Subjects</li>
-                        <li class="collection-item">Plus Two Classes</li>
-                        <li class="collection-item">PSC Coaching</li>
-                        <li class="collection-item">Lateral Entry Classes</li>
-                        <li class="collection-item">BSc and BCom Classes</li>
-                        <li class="collection-item">Plus Two Classes</li>
-                    </ul>
-                </div>
-            </div>
-           
-            <div class="card loc medium">
-                <div class="card-content">
-                    <span class="card-title" id="ma">Location<i class="material-icons right close1">close</i></span>
-                    <section id="map">
-                        Google Maps<br>Irinjalakuda P.O <br>Thrissur
-                    </section>
-                </div>
-            </div>
-
-            <div class="card address" >
-                <div class="card-content">
-                    <span class="card-title" id="addr">Address<i class="material-icons right close2">close</i></span>
-                    <section>
-                        Near Kallada Regency<br>Irinjalakuda P.O <br>Thrissur
-                    </section>
-                </div>
+        <div class="collection hoverable" id="contents">
+           <a href="#courses" class="collection-item"><i class="material-icons">class</i>Courses<i class="material-icons right">chevron_right</i></a>
+           <a href="#location" class="collection-item"><i class="material-icons">location_on</i>Location<i class="material-icons right">chevron_right</i></a>
+           <a href="" class="collection-item"><i class="material-icons">contacts</i>Contacts<i class="material-icons right">chevron_right</i></a>
+        </div>
+        <div class="white section hoverable">
+           <p class="sub-head">Contact</p>
+           <div class="divider"></div>
+           <br>
+           <li>Near Kallada Regency</li>
+           <li>Irinjalakuda</li>
+           <li>Thrissur</li>
+        </div>
+        <!--not displaying on medium and large screens-->
+        <ul class="collection with-header hide-on-med-and-up" id="courses">
+            <li class="collection-header"><p class="sub-head">Courses Offered<i class="material-icons right close1">close</i></p></li>
+            <li class="collection-item">Engineering Subjects</li>
+            <li class="collection-item">Plus Two Classes</li>
+            <li class="collection-item">PSC Coaching</li>
+            <li class="collection-item">Lateral Entry Classes</li>
+            <li class="collection-item">BSc and BCom Classes</li>
+            <li class="collection-item">High School Subjects</li>
+        </ul>
+        <br>
+        <div id="location" style="padding:20px;background-color: white" class="hoverable hide-on-med-and-up">
+            <p class="sub-head">Location<span><i class="material-icons right close2">close</i></span></p>
+          <div id="map">
+          </div>
+        </div>
+    </div>
+    <!--Second column, displays on medium and large screens-->
+    <div class="col m8 l8">
+        <ul class="collection with-header hide-on-small-only hoverable" id="courses">
+            <li class="collection-header"><p class="sub-head">Courses Offered<i class="material-icons right close1">close</i></p></li>
+            <li class="collection-item">Engineering Subjects</li>
+            <li class="collection-item">Plus Two Classes</li>
+            <li class="collection-item">PSC Coaching</li>
+            <li class="collection-item">Lateral Entry Classes</li>
+            <li class="collection-item">BSc and BCom Classes</li>
+            <li class="collection-item">High School Subjects</li>
+        </ul>
+        <div id="location" style="padding:20px;background-color: white" class="hoverable hide-on-small-only">
+            <p class="sub-head">Location<i class="material-icons right close2 ">close</i></p>
+            <div id="map">
             </div>
         </div>
     </div>
+ </div>
     <footer class="page-footer #ff5a00 orange ">
         <div class="container center-align">@2014 Copyright ESPIRIT.in</div>
     </footer>
-</div> 
+</div>
+
     <script>
          function initMap(){
             //Map options
@@ -91,12 +91,11 @@
             });     
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlj0jaT1dkRRSrUtxRJvaSkTJeK7GNbec&callback=initMap"
-        async defer></script>
-    <script src="etc.js"></script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js">
-     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlj0jaT1dkRRSrUtxRJvaSkTJeK7GNbec&callback=initMap"
+    async defer></script>
+    
+    <script src="etc1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
 </html>
-
